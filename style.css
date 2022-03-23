@@ -1,0 +1,45 @@
+body{
+    background-size: cover;
+    background-position: center;
+    background-color: darkgray;
+}
+h2{
+    font-family: coolvetica;
+}
+.main_div{
+    font-family: coolvetica;
+    color: white;
+    text-shadow: 5px 5px 5px black;
+    font-weight: bolder;
+    font-size: 30px;
+    letter-spacing: 3px;
+}
+.header_div{
+    background-color: rgb(56, 56, 56);
+    color:rgb(255, 255, 255);
+    font-family: coolvetica;
+}
+p{
+font-size: 18px;
+font-weight: bold;
+letter-spacing: 2px;
+}
+button{
+margin-top: 30px;
+width: 130px;
+font-weight: bold;
+letter-spacing: 3px;
+}
+.footer{
+    position: fixed;
+    background-color: rgb(56, 56, 56);
+    color: rgb(255, 255, 255);
+    bottom: 0;
+    width: 100%;
+    font-size: 18px;
+    line-height: 3;
+    text-align: center;
+    text-shadow: 5px 5px 5px black;
+    font-family: coolvetica;
+    letter-spacing: 3px;
+}
