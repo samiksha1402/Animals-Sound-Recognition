@@ -21,6 +21,25 @@ function gotResults(error,results){
         document.getElementById("confidence").innerHTML="Accuracy - " + (results[0].confidence * 100).toFixed(2) + "%";
         document.getElementById("label").style.color= "rgb("+ r + ", " + g +", "+ b +")";
         document.getElementById("confidence").style.color= "rgb("+ r + ", " + g +", "+ b +")";
+
+        img1= document.getElementById("cat");
+        img2= document.getElementById("dog");
+        img3= document.getElementById("tiger");
+        img4= document.getElementById("bg_noise");
+
+        if (results[0].label == "Meow" ){
+            img1.src = "cat.gif"
+        } 
+        else if (results[0].label == "Barking") {
+            img2.src = "dog.gif"; 
+        }
+        else if (results[0].label == "Roar"){
+            img3.src = "tiger.gif";
+        }
+        else{
+            img4.src = "talking.gif";
+        }
+    
    }
 }
 
