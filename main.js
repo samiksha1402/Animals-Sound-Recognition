@@ -22,22 +22,18 @@ function gotResults(error,results){
         document.getElementById("label").style.color= "rgb("+ r + ", " + g +", "+ b +")";
         document.getElementById("confidence").style.color= "rgb("+ r + ", " + g +", "+ b +")";
 
-        img1= document.getElementById("cat");
-        img2= document.getElementById("dog");
-        img3= document.getElementById("tiger");
-        img4= document.getElementById("bg_noise");
-
-        if (results[0].label == "Meow" ){
+        img1= document.getElementById("hearing");
+        if (results[0].label == "meow" ){
             img1.src = "cat.gif"
         } 
-        else if (results[0].label == "Barking") {
-            img2.src = "dog.gif"; 
+        else if (results[0].label == "bark") {
+            img1.src = "dog.gif"; 
         }
-        else if (results[0].label == "Roar"){
-            img3.src = "tiger.gif";
+        else if (results[0].label == "roar"){
+            img1.src = "tiger.gif";
         }
         else{
-            img4.src = "talking.gif";
+            img1.src = "talking.gif";
         }
     
    }
